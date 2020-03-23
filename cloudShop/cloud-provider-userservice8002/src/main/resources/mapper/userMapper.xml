@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.cloud.shop.dao.UserDao">
+    <resultMap id="BaseResultMap" type="com.cloud.shop.entity.User">
+        <id column="id" property="id" jdbcType="BIGINT"/>
+        <id column="userName" property="userName" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <insert id="create" parameterType="User" useGeneratedKeys="true" keyProperty="id">
+            insert into user(userName) values (#{userName})
+    </insert>
+
+    <select id="getUserById" parameterType="Long" resultMap="BaseResultMap">
+        select * from user where id = #{id}
+    </select>
+
+
+</mapper>

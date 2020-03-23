@@ -1,0 +1,5 @@
+com\cloud\shop\service\impl\UserServiceImpl.class
+com\cloud\shop\service\UserService.class
+com\cloud\shop\UserServiceApplication.class
+com\cloud\shop\controller\UserController.class
+com\cloud\shop\dao\UserDao.class

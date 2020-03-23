@@ -1,0 +1,17 @@
+server:
+   port: 7002
+eureka:
+  instance:
+    #hostname: 127.0.0.1:7002/eureka  #单击
+    hostname: eureka7002.com #集群
+  client:
+    #false表示不向注册中心注册自己
+    register-with-eureka: false
+    #false表示自己就是注册中心。我的职责就是维护服务实例，发现服务
+    fetch-registry: false
+    service-url:
+      #defaultZone: http://127.0.0.1:7001/eureka #单机
+      defaultZone: http://eureka7001.com:7001/eureka/,http://eureka7002.com:7002/eureka/  #集群
+     
+
+     

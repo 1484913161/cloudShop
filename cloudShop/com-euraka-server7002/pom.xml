@@ -9,17 +9,10 @@
   
   <dependencies>
         <!--eureka-server-->
-        <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-netflix-eureka-server</artifactId>
-        </dependency>
-        <!--自定义api通用包-->
-<!--        <dependency>-->
-<!--            <groupId>org.could.shop</groupId>-->
-<!--            <artifactId>cloud-api-commons</artifactId>-->
-<!--            <version>${project.version}</version>-->
-<!--        </dependency>-->
-        <!--boot web acctuator-->
+          <dependency>
+              <groupId>org.springframework.cloud</groupId>
+              <artifactId>spring-cloud-starter-netflix-eureka-server</artifactId>
+          </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot</artifactId>

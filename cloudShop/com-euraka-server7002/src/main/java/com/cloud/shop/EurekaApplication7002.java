@@ -11,4 +11,5 @@ public class EurekaApplication7002 {
 		SpringApplication.run(EurekaApplication7002.class, args);
 		System.out.println("euraka:7002注册中心启动成功！");
 	}
-}	
+
+}

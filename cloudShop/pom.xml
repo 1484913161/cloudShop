@@ -10,9 +10,12 @@
     <modules>
         <module>cloud-eureka-server7001</module>
         <module>cloud-provider-userservice8001</module>
-        <module>cloud-consumer-userservice80</module>
+        <module>cloud-consumer-userservice801</module>
         <module>cloud-shop-comon</module>
         <module>com-euraka-server7002</module>
+        <module>cloud-config-center3344</module>
+        <module>cloud-provider-hystrix-payment8001</module>
+        <module>cloud-consumer-feign-hystrix-order801</module>
     </modules>
     <packaging>pom</packaging>
 

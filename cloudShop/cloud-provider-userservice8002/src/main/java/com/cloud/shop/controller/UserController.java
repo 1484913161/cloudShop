@@ -4,6 +4,8 @@ import com.cloud.shop.entity.CommonResult;
 import com.cloud.shop.entity.User;
 import com.cloud.shop.service.UserService;
 import lombok.extern.slf4j.Slf4j;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.web.bind.annotation.*;
 import javax.annotation.Resource;
 
@@ -18,7 +20,7 @@ public class UserController {
     @Resource
     private UserService userService;
 
-
+    private final static Logger log = LoggerFactory.getLogger(UserController.class);
 
     @RequestMapping(value = "/create", method = RequestMethod.POST)
     public CommonResult create(@RequestBody User user) {
@@ -27,9 +29,9 @@ public class UserController {
         log.info("插入结果：" + result);
 
         if (result > 0) {
-            return new CommonResult(200, "插入成功", result, true);
+            return CommonResult.success(result);
         } else {
-            return new CommonResult(444, "插入失败", null, false);
+            return CommonResult.fail();
         }
     }
 

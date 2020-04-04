@@ -6,6 +6,7 @@ import com.cloud.shop.service.UserService;
 import lombok.extern.slf4j.Slf4j;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.*;
 import javax.annotation.Resource;
 
@@ -17,6 +18,10 @@ import javax.annotation.Resource;
 @Slf4j
 @RequestMapping("/user")
 public class UserController {
+	
+	@Value("${server.port}")
+	private String serverPort;
+	
     @Resource
     private UserService userService;
 
@@ -38,6 +43,11 @@ public class UserController {
     @RequestMapping(value = "/get/{id}", method = RequestMethod.GET)
     public CommonResult<User> getPaymenyById(@PathVariable("id")Long id) {   	
     	return userService.getUserById(id);
+    }
+    
+    @RequestMapping(value = "/lb")
+    public String lb() {   	
+    	return serverPort;
     }
 
 }

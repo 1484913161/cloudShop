@@ -9,13 +9,12 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>cloud-config-center3344</artifactId>
-    <dependencies>
-
-        <!--config服务端-->
+    <artifactId>cloud-config-client-3355</artifactId>
+	<dependencies>
+		 <!--config客户端-->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-config-server</artifactId>
+            <artifactId>spring-cloud-starter-config</artifactId>
         </dependency>
         <!--eureka-server-->
         <dependency>
@@ -46,6 +45,6 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
         </dependency>
-    </dependencies>
+	</dependencies>
 
 </project>

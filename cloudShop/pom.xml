@@ -18,6 +18,8 @@
         <module>cloud-consumer-feign-hystrix-order801</module>
         <module>cloud-consumer-hystrix-dashboard9001</module>
         <module>cloud-getway-gatway9527</module>
+        <module>cloud-config-client-3355</module>
+        <module>cloud-config-client-3355</module>
     </modules>
     <packaging>pom</packaging>
 

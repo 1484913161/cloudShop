@@ -14,6 +14,6 @@ import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 public class ConfigCenterMain3344 {
     public static void main(String[] args) {
         SpringApplication.run(ConfigCenterMain3344.class);
-        System.out.println("cofig启动成功");
+        System.out.println("cofig服务端启动成功");
     }
 }

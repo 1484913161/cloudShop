@@ -14,6 +14,8 @@ import io.netty.handler.stream.ChunkedWriteHandler;
 /**
  * @author wangfei
  * @date 2020-06-10 21:49
+ * 
+ *  	【处理服务器逻辑】
  */
 public class WebChatServerInitialize extends ChannelInitializer<SocketChannel> {
 

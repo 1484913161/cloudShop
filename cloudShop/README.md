@@ -172,4 +172,12 @@
             - 本地：curl -X POST http://127.0.0.1:3344/actuator/bus-refresh/config-client:3355       
 - Stream【消息驱动】
     - 为什么要引入 
-                         
+
+- Nacos  
+    - 如项目中创建的cloudalibaba-provider-payment9001与9002还有consumer-nacos-order83
+    - 通过测试发现nacos中有负载均衡【83端口轮训调用9001与9002两个生产者】        
+    - nacos支持CP与AP的模式切换
+        - C是所有节点在同一时间看到的数据是否一致；而A的定义是所有的请求都会收到响应
+        - 何时选择使用何种模式
+          - 如果不需要存储服务级别的信息且服务实例是通过nacos-client注册，并能保持心跳上报那么可以选择AP模式。当前主流的服务SprignCloud 和dubbo服务，都适合用于AP模式，Ap模式为了服务的可能性减弱了一致性，因此AP模式只
+                      

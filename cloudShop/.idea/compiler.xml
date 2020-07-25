@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="cloudalibaba-provider-payment9002" />
+        <module name="cloudalibaba-provider-payment9001" />
+        <module name="cloud-getway-gatway9527" />
+        <module name="cloud-shop-comon" />
+        <module name="netty-websocket" />
+        <module name="cloud-eureka-server7001" />
+        <module name="cloud-stream-rabbitmq-consumer8803" />
+        <module name="cloud-stream-rabbitmq-consumer8802" />
+        <module name="cloud-provider-hystrix-payment8001" />
+        <module name="cloud-consumer-userservice801" />
+        <module name="cloud-provider-userservice8001" />
+        <module name="cloudalibaba-consumer-nacos-order83" />
+        <module name="cloud-stream-rabbitmq-provider8801" />
+        <module name="cloud-consumer-feign-hystrix-order801" />
+        <module name="com-euraka-server7002" />
+        <module name="cloud-config-client-3355" />
+        <module name="cloud-config-center3344" />
+        <module name="cloud-consumer-hystrix-dashboard9001" />
+        <module name="cloud-config-client-3366" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="cloud-config-center3344" target="1.8" />
+      <module name="cloud-config-client-3355" target="1.8" />
+      <module name="cloud-config-client-3366" target="1.8" />
+      <module name="cloud-consumer-feign-hystrix-order801" target="1.8" />
+      <module name="cloud-consumer-hystrix-dashboard9001" target="1.8" />
+      <module name="cloud-consumer-userservice801" target="1.8" />
+      <module name="cloud-eureka-server7001" target="1.8" />
+      <module name="cloud-getway-gatway9527" target="1.8" />
+      <module name="cloud-provider-hystrix-payment8001" target="1.8" />
+      <module name="cloud-provider-userservice8001" target="1.8" />
+      <module name="cloud-shop-comon" target="1.8" />
+      <module name="cloud-stream-rabbitmq-consumer8802" target="1.8" />
+      <module name="cloud-stream-rabbitmq-consumer8803" target="1.8" />
+      <module name="cloud-stream-rabbitmq-provider8801" target="1.8" />
+      <module name="cloudalibaba-consumer-nacos-order83" target="1.8" />
+      <module name="cloudalibaba-provider-payment9001" target="1.8" />
+      <module name="cloudalibaba-provider-payment9002" target="1.8" />
+      <module name="cloudShop" target="1.8" />
+      <module name="com-euraka-server7002" target="1.8" />
+      <module name="netty-websocket" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

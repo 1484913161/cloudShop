@@ -30,7 +30,8 @@ public class HttpRequestHandler extends SimpleChannelInboundHandler<FullHttpRequ
         try {
             URL location = HttpRequestHandler.class.getProtectionDomain().getCodeSource().getLocation();
             //String path = location.toURI() + "index.html";
-            String path = "D:/java/workspase/idea/cloudshop/cloudShop/netty-websocket/src/main/resources/index.html";
+            String path = "E:/workspace/Ider/cloudShop/cloudShop/cloudShop/netty-websocket/src/main/resources/index.html";
+            //String path = "D:/java/workspase/idea/cloudshop/cloudShop/netty-websocket/src/main/resources/index.html";
             indexFile = new File(path);
         } catch (Exception e) {
             e.printStackTrace();
@@ -42,6 +43,9 @@ public class HttpRequestHandler extends SimpleChannelInboundHandler<FullHttpRequ
         super.exceptionCaught(ctx, cause);
     }
 
+    /**
+     * 【读取客户端所发过来的请求，并向客户端发送响应的。】
+     */
     @Override
     protected void channelRead0(ChannelHandlerContext ctx, FullHttpRequest request) throws Exception {
         //获取uri
@@ -55,7 +59,7 @@ public class HttpRequestHandler extends SimpleChannelInboundHandler<FullHttpRequ
             System.out.println("请求是Http请求！！！，则需要获取index.html!!!");
             //如果是http协议进行发送index.html页面
             /***
-             * if情趣是100那么进入下一步
+             * if请求是100那么进入下一步
              */
             if(HttpHeaders.is100ContinueExpected(request)){
                 FullHttpResponse response = new DefaultFullHttpResponse(HttpVersion.HTTP_1_1,HttpResponseStatus.CONTINUE);

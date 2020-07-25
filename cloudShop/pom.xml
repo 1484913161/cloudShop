@@ -26,6 +26,9 @@
         <module>cloud-stream-rabbitmq-consumer8803</module>
         <module>cloud-stream-rabbitmq-consumer8803</module>
         <module>netty-websocket</module>
+        <module>cloudalibaba-provider-payment9001</module>
+        <module>cloudalibaba-provider-payment9002</module>
+        <module>cloudalibaba-consumer-nacos-order83</module>
     </modules>
     <packaging>pom</packaging>
 
@@ -44,6 +47,14 @@
 
     <dependencyManagement>
         <dependencies>
+            <!--spring cloud alibaba 2.2.0.RELEASE-->
+            <dependency>
+                <groupId>com.alibaba.cloud</groupId>
+                <artifactId> spring-cloud-alibaba-dependencies </artifactId>
+                <version> 2.2.0.RELEASE </version>
+                <type> pom </type>
+                <scope>import</scope>
+            </dependency>
             <!--spring boot 2.2.2-->
             <dependency>
                 <groupId>org.springframework.boot</groupId>
